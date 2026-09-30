@@ -13,3 +13,6 @@ fmt:
 
 vet:
 	go vet ./...
+
+play:
+	go test ./problems/$(P) -run '^TestPlayground$$' -v -count=1
